@@ -1,0 +1,17 @@
+
+
+This package of programs is used to convert evt files to root files using SNL's ddasdumper program, then combine the output root files into a meaningful root file that we can use in analysis.
+
+The programs in the package:
+
+ - readfile.C  : this contains the C++ code used in the readFile executable
+ - readfile.h  : this is the header file for the code.
+ 
+ - dump.sh     : this bash script executes ddasdumper for each evt file in the sequence
+ 
+ - do.sh  : this bash script executes 'readFile' once for each set of root files in the sequence (once / run)
+ - readFile    : this executable is used to convert the 'rXYZ-A.root' files of a particular XYZ into a single root file 'output_runXYZ'
+ 
+ 
+There are also files here used for compiling readfile.C into the executable readFile.
+
